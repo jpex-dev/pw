@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LAB 1</title>
+    <script src="../utils/utils.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="../utils/style.css"></script>
+  </head>
+
+  <body>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        helloworld();
+        modal();
+      });
+    </script>
+    <div id="helloworldContainer">
+
+      <button id="buttoncolor"type="button" onclick="clicked()">Click Me!</button>
+    </div>
+    <form id="loginForm" action="#" method="post">
+        <div id="inputs" class="input">
+            <h3>FAÇA LOGIN</h3>
+            <input type="text" placeholder="username" id="username" class="form-control" required>
+            <span id="usernameError" class="error"></span>
+            <input type="password" placeholder="password" id="password" class="form-control" required>
+            <span id="passwordError" class="error"></span>
+            <button type="submit" class="btn btn-danger" onclick="validateForm()">SUBMIT</button>
+        </div>
+    </form>
+
+    <div id="divmodal">
+      <button type="button" id="myBtn" onclick="open()">OPEN MODAL</button>
+    <div class="modal" id="myModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+          </div>
+    </div>
+    </div>
+
+  </body>
+</html>
